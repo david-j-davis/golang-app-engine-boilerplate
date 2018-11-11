@@ -33,7 +33,7 @@ func main() {
 
 // [START helloHandler]
 
-// indexHandler responds to requests with our greeting.
+// helloHandler responds to requests with our greeting.
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/hello" {
 		http.NotFound(w, r)
